@@ -1,3 +1,5 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
 .App {
   text-align: center;
 }
@@ -34,5 +36,29 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.nav {
+  padding-left: 55px;
+
+
+  .nav-item {
+    height: 150px;
+    margin-bottom: 10px;
+
+    button {
+      font-size: 14px;
+      font-weight: 500;
+      word-break: break-all;
+      width: 150px;
+      height: 50px;
+
+      &.rotate-90 {
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+      }
+    }
+
   }
 }
